@@ -18,6 +18,7 @@ class Poultry(abc.ABC):  # 家禽的類別
     def eat(self):
         pass
 
+
 class Duck(Poultry):
     def __init__(self, name, sound):
         super().__init__(name, sound, 'Duck')
@@ -27,6 +28,7 @@ class Duck(Poultry):
 
     def eat(self):
         print(f"{self.specy} eat anything.")
+
 
 class Chicken(Poultry):
     def __init__(self, name, sound):
@@ -40,6 +42,7 @@ class Chicken(Poultry):
     
     def eat(self):
         print(f"{self.specy} eat bugs.")
+
 
 class Goose(Poultry):
     def __init__(self, name, sound):
